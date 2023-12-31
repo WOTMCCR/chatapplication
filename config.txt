@@ -1,0 +1,33 @@
+#ifndef CONFIG_LOG_H
+#define CONFIG_LOG_H
+
+#define LOGFILES "/var/log/chat-logs/"
+#define FIFOFILES "/home/caichenru2020152021/finaltest/chatapplication/data/"
+
+#define POOLLOG LOGFILES "threads-log/pool.log"
+
+
+#define Register_FIFO FIFOFILES "server_fifo/Ccr_register"
+#define Login_FIFO FIFOFILES"server_fifo/Ccr_Login"
+#define Chat_FIFO FIFOFILES"server_fifo/Ccr_sendmsg"
+#define LOGOUT_FIFO FIFOFILES"server_fifo/Ccr_LOGOUT"
+
+#define RegisterName "/CcrRegisterSemaphor"
+#define LoginName "/CcrLoginSemaphor"
+#define ChatName "/CcrChatSemaphor"
+#define LogOutName "/CcrLogOutSemaphor"
+#define UserListNmae "CcrUserListSemaphor"
+
+#define MAX_ONLINE_USERS 50
+#define MAX_LOG_PERUSER 1
+#define MAX_EVENTS 10
+
+#define SHM_USER_LIST 12345 // Change this to a unique key
+#define SHM_USER_NUM 12346  // Change this to a unique key
+
+#define POOLSIZE 4
+#define MAX_QUEUE 100
+
+
+
+#endif
